@@ -1,4 +1,4 @@
-/* Nicole’s family history — the same paper-and-navy scrapbook style as the other family pages. */
+/* The Anderau family history — paper-and-navy scrapbook style. */
 
 :root {
   --ink: #1c1612;
@@ -848,3 +848,37 @@ dialog.lightbox::backdrop { background: rgba(6, 10, 16, 0.82); }
 .tree .gen { display: block; }
 .tree .indent1 { padding-left: 1.4rem; }
 .tree .indent2 { padding-left: 2.8rem; }
+
+.shots {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(16.5rem, 1fr));
+  gap: 1rem;
+  margin: 1.15rem 0 0.3rem;
+  max-width: 62rem;
+}
+.shot {
+  margin: 0;
+  background: var(--card);
+  border: 1px solid var(--line);
+  padding: 0.45rem 0.45rem 0.75rem;
+  box-shadow: 0 12px 28px rgba(16, 36, 63, 0.06);
+}
+.shot img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 24rem;
+  object-fit: contain;
+  background: #efe6d4;
+}
+.shot figcaption {
+  padding: 0.6rem 0.3rem 0.1rem;
+  font-size: 0.9rem;
+  line-height: 1.45;
+}
+.shot figcaption .credit {
+  display: block;
+  margin-top: 0.35rem;
+  color: var(--ink-soft);
+  font-size: 0.78rem;
+}
