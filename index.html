@@ -3,6 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
   <title>The Anderau Family — Nicole’s Father’s Side</title>
   <meta name="description" content="The Anderau family of Nicole’s father, Russ: Frederick and Vivian (Mule) Anderau, their sons, and the places the records put them. Sources and confidence labels throughout.">
   <link rel="canonical" href="https://shea-nelson.github.io/nicole-family-history/">
@@ -10,12 +11,13 @@
   <meta property="og:title" content="The Anderau Family — Nicole’s Father’s Side">
   <meta property="og:description" content="Frederick and Vivian Anderau, their sons, and the places the records put them.">
   <meta property="og:url" content="https://shea-nelson.github.io/nicole-family-history/">
+  <meta property="og:locale" content="en_US">
   <meta name="theme-color" content="#10243f">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-  <a class="skip" href="#main">Skip to content</a>
+  <a class="skip" href="#content">Skip to content</a>
   <header class="site-header">
     <a class="brand" href="#top">
       <strong>The Anderau Family</strong>
@@ -34,10 +36,11 @@
   </header>
 
   <main id="main">
-    <article class="hero" id="top">
+    <article>
+    <header class="hero" id="top">
       <div class="hero-copy">
         <p class="eyebrow">Nicole’s father’s side</p>
-        <h1>The Anderau Family</h1>
+        <h1 id="content" tabindex="-1">The Anderau Family</h1>
         <hr class="rule">
         <p class="role">Frederick and Vivian, and their four sons</p>
         <p class="ship-line">New York City · Queens · Miami-Dade · Titusville</p>
@@ -53,28 +56,34 @@
         </div>
         <figcaption>A title panel, not a portrait. No family photographs have been added yet.</figcaption>
       </figure>
-    </article>
+    </header>
 
     <section class="section" id="key">
       <div class="wrap">
         <p class="kicker">01 — How to read this page</p>
         <h2>Confidence labels</h2>
-        <ul class="key">
+        <ul class="key" role="list">
           <li><span class="conf confirmed">Confirmed</span> A public record states it directly, or the family has confirmed it (marked “confirmed by family”).</li>
           <li><span class="conf likely">Likely</span> Strong, consistent evidence, but no single record yet ties every part together.</li>
           <li><span class="conf unverified">Unverified</span> A lead, or something searched for and not found.</li>
         </ul>
         <p>The same labels apply to places. A city history that follows a place label is context for that city and those years. It is not a claim that someone in the family stood in the photograph or took part in the event.</p>
-        <div class="tree" aria-label="Summary tree">
-          <span class="gen"><strong>Nicole</strong> and her sister <strong>Dawn</strong>, daughters of Russ Anderau and Joy Henry</span>
-          <span class="gen indent1"><strong>Russ’s parents:</strong> Frederick Anderau <span class="conf confirmed">Confirmed</span> and Vivian (Mule) Anderau <span class="conf confirmed">Confirmed</span></span>
-          <span class="gen indent2">Frederick is likely Frederick Frank Anderau, 1926–1971, buried in North Miami <span class="conf likely">Likely</span></span>
-          <span class="gen indent1"><strong>Russ’s brothers:</strong> Rick (1951–2024), Ron, and Rob <span class="conf confirmed">Confirmed</span></span>
-        </div>
+        <ul class="tree" role="list">
+          <li><strong>Nicole</strong> and her sister <strong>Dawn</strong>, daughters of Russ Anderau and Joy Henry
+            <ul role="list">
+              <li><strong>Russ’s parents:</strong> Frederick Anderau <span class="conf confirmed">Confirmed</span> and Vivian (Mule) Anderau <span class="conf confirmed">Confirmed</span>
+                <ul role="list">
+                  <li>Frederick is likely Frederick Frank Anderau, 1926–1971, buried in North Miami <span class="conf likely">Likely</span></li>
+                </ul>
+              </li>
+              <li><strong>Russ’s brothers:</strong> Rick (1951–2024), Ron, and Rob <span class="conf confirmed">Confirmed</span></li>
+            </ul>
+          </li>
+        </ul>
       </div>
     </section>
 
-    <section class="section" id="family" style="background: rgba(255,255,255,0.35);">
+    <section class="section section-wash" id="family">
       <div class="wrap">
         <p class="kicker">02 — The family</p>
         <h2>Frederick and Vivian (Mule) Anderau</h2>
@@ -121,7 +130,11 @@
         </div>
         <div class="shots">
           <figure class="shot">
-            <img src="img/queens-sunnyside-1940.jpg" alt="Black-and-white tax photograph of a brick apartment building with fire escapes and ground-floor shops at a Queens street corner. A sign in the foreground reads 194-23 Q.">
+            <picture>
+              <source type="image/avif" srcset="img/queens-sunnyside-1940.avif">
+              <source type="image/webp" srcset="img/queens-sunnyside-1940.webp">
+              <img src="img/queens-sunnyside-1940.jpg" width="840" height="1262" loading="lazy" decoding="async" alt="Black-and-white tax photograph of a brick apartment building with fire escapes and ground-floor shops at a Queens street corner. A sign in the foreground reads 194-23 Q.">
+            </picture>
             <figcaption>
               A New York City tax photograph of 45-08 40th Street, Sunnyside, Queens, taken between 1939 and 1941. Not a family address.
               <span class="credit">New York City Department of Records, Municipal Archives. Public domain. <a href="https://commons.wikimedia.org/wiki/File:Queens_Boulevard_Court_1940_tax_photo_(40th_Street_corner).jpg">Wikimedia Commons</a>. Date: 1939–1941.</span>
@@ -150,14 +163,22 @@
         </div>
         <div class="shots">
           <figure class="shot">
-            <img src="img/titusville-postcard-c1945.jpg" alt="A large-letter linen postcard reading Greetings from Titusville, Florida, with small scenes of houses, trees, and the river inside the letters.">
+            <picture>
+              <source type="image/avif" srcset="img/titusville-postcard-c1945.avif">
+              <source type="image/webp" srcset="img/titusville-postcard-c1945.webp">
+              <img src="img/titusville-postcard-c1945.jpg" width="1000" height="619" loading="lazy" decoding="async" alt="A large-letter linen postcard reading Greetings from Titusville, Florida, with small scenes of houses, trees, and the river inside the letters.">
+            </picture>
             <figcaption>
               Large-letter postcard of Titusville, produced about 1945 by Dexter Press. A promoter’s view of the town before the census boom, not a photograph of a family house.
               <span class="credit">Photograph of the postcard by Steve Shook, 2012. License: <a href="https://creativecommons.org/licenses/by/2.0/">CC BY 2.0</a>. Postcard date: circa 1945. <a href="https://commons.wikimedia.org/wiki/File:Greetings_from_Titusville,_Florida_-_Large_Letter_Postcard_(6946148961).jpg">Wikimedia Commons</a>.</span>
             </figcaption>
           </figure>
           <figure class="shot">
-            <img src="img/apollo11-launch-1969.jpg" alt="Apollo 11’s Saturn V rocket lifting off in a plume of flame and smoke, seen from above the launch tower, with water and low coastal land beyond.">
+            <picture>
+              <source type="image/avif" srcset="img/apollo11-launch-1969.avif">
+              <source type="image/webp" srcset="img/apollo11-launch-1969.webp">
+              <img src="img/apollo11-launch-1969.jpg" width="1000" height="1250" loading="lazy" decoding="async" alt="Apollo 11’s Saturn V rocket lifting off in a plume of flame and smoke, seen from above the launch tower, with water and low coastal land beyond.">
+            </picture>
             <figcaption>
               Apollo 11 leaves Launch Complex 39A at Kennedy Space Center, Merritt Island, at 9:32 a.m. Eastern time on July 16, 1969. Titusville is the town on the other side of the Indian River. This is not a photograph of the town, and it is not evidence the family was there.
               <span class="credit">NASA. Public domain, U.S. government work. Date: July 16, 1969. <a href="https://commons.wikimedia.org/wiki/File:Apollo_11_Launch2.jpg">Wikimedia Commons</a>.</span>
@@ -167,7 +188,7 @@
       </div>
     </section>
 
-    <section class="section" id="questions" style="background: rgba(255,255,255,0.35);">
+    <section class="section section-wash" id="questions">
       <div class="wrap">
         <p class="kicker">04 — Still to learn</p>
         <h2>Open questions</h2>
@@ -204,15 +225,18 @@
         </ul>
       </div>
     </section>
+    </article>
   </main>
 
   <footer class="site-footer">
     <div class="wrap">
       <p>Compiled for the family, 2026. Corrections and memories are welcome.</p>
-      <p><a href="#top">Back to the top</a> · <a href="#sources">Sources</a></p>
+      <nav aria-label="Footer">
+        <p><a href="#top">Back to the top</a> · <a href="#sources">Sources</a></p>
+      </nav>
     </div>
   </footer>
 
-  <script src="js/main.js"></script>
+  <script src="js/main.js" defer></script>
 </body>
 </html>
